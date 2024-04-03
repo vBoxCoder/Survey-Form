@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="template.png">
+
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+  <div id="container">
+    <!-- Title/subtext -->
+<h1 id="title">How Happy are You?<img src="Images/emotion_wheel2_colour.webp" alt="human emoition wheel"/></h1>
+<p id="description">Thank you for taking the time to take my survey. If no one told you today you are awesome!!!</p><br><br>
+
+<!-- form Elements-->
+<form id="survey-form">
+
+    <!-- Name/Email/Age inputs -->
+  <label id="name-label">Name:</label><br>
+  <input id="name" name="name-label" type="text"required placeholder="Please enter your name"><br><br>
+
+  <label id="email-label">Email:</label><br>
+  <input id="email" name="email" type="email" required placeholder="Please enter your email" autocomplete="off" /><br><br>
+
+  <label id="number-label">Age (optional)</label><br>
+  <input id="number" name="age" placeholder="0-100"type="number" min="0" max="100" /><br><br>
+
+  <label for="optional-1">Describe a perfect day?</label><br>
+  <input id="optional-1"  name="opn-1" type="text" autocomplete  /><br></br>
+
+  <!-- Open-ended question #1-->
+<p>Have you talked to someone today?
+    <!-- Dropwdown menu -->
+  <select id="dropdown">
+    <optgroup>
+    <option value=""></option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+    <option value="i should talk to someone today"> I should talk to someone today</option>
+    </optgroup>
+  </select>
+</p>
+
+    <!-- Old radio buttons -->
+  <!-- <label for="opn-2">Have you talked to someone today?</label><br><br>
+<input id="option1" name="option1" type="checkbox" value="yes" />
+<label for="yes">Yes</label><br>
+
+<input id="option2" name="option2" type="checkbox" value="no" />
+<label for="yes">No</label><br>
+
+<input id="option3" name="option3" type="checkbox" value="yes" />
+<label for="yes">I should go talk to a friend/family today.</label><br><br> -->
+
+
+<label for="option-label" />What to you is your best feature/trait?</label>
+<input id="optional-2" name="optional-2" type="text" required /><br><br>
+
+<div id="group1">
+  <h3>Group 1</h3>
+  What are some Hobbies of yours.<br>
+  <input  name="optn-1" type="radio" value="books"/>
+  <label id="group-1">Books</label><br>
+  <input type="checkbox" id="group-1" name="group-1" value="group-1"/>
+ <label id="opt-1">VideoGames</label><br>
+  <input name="group1" type="radio" value="artist"/>
+  <label id="opt-2">Artist(Paiting/Drawing/Etc)</label><br>
+  <input  name="group1" type="radio" value="hiking"/><label id="opt-3">Hiking</label><br>
+
+  <br>
+
+  <h2>What would you like to improve?</h2>
+
+  <input class="checkbox" name="checkbox" type="checkbox"/>
+  <label id="checkbox-label">Mental State</label><br>
+  <input class="checkbox" name="checkbox" type="checkbox"/>
+  <label id="checkbox-label">Physical State</label><br>
+  <input class="checkbox" name="checkbox" type="checkbox"/>
+  <label id="checkbox-label">Financial State</label><br>
+  <input class="checkbox" name="checkbox" type="checkbox"/>
+  <label id="checkbox-label">Relationships </label>
+
+</div>
+
+</form>
+
+<h2 class="footer">Comments & Concerns</h2>
+<textarea id="text">
+    
+</textarea><br><br>
+
+<button class="btns" type="submit">Submit</button>
+<button class="btns" type="button">Clear</button>
+</div>
+
+<Script src="script.js"></Script>
+</body>
+</html>
